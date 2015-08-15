@@ -33,7 +33,7 @@ class ParticleViewer:
 		for measurement, color in zip(measurements, colors):
 			self.add_measurement(robot, measurement, color, length)
 
-	def add_particle(self, x, y, orientation=0.0, radius=3.0, color='k'):
+	def add_particle(self, x, y, orientation=0.0, radius=1.0, color='k'):
 		c=pyplot.Circle((x,y),radius,color=color)
 		lw = 1.5 * radius
 		lh = 0.5 * radius
